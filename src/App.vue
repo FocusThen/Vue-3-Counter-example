@@ -1,17 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ScoreCounter name="muco" />
+  <ScoreCounterSyntaxSugar name="sugar" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ScoreCounter from './components/ScoreCounter.vue';
+import ScoreCounterSyntaxSugar from './components/ScoreCounterSyntaxSugar.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    ScoreCounter,
+    ScoreCounterSyntaxSugar,
+  },
+};
 </script>
 
 <style>
@@ -19,8 +21,8 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 3rem;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
